@@ -137,7 +137,7 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto animate-fade-in-up">
           <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl border-4 border-institutional-mustard/20">
             <iframe
-              src="https://www.google.com/maps/place/COMPLEJO+EDUCATIVO+CAT%C3%93LICO+PADRE+MARIO+ZANCONATO/@13.6566125,-89.1821993,18.51z/data=!4m14!1m7!3m6!1s0x8f633147bf9a5625:0x24225115bc974a41!2sCOMPLEJO+EDUCATIVO+CAT%C3%93LICO+PADRE+MARIO+ZANCONATO!8m2!3d13.6566734!4d-89.1813796!16s%2Fg%2F1yg57vgzt!3m5!1s0x8f633147bf9a5625:0x24225115bc974a41!8m2!3d13.6566734!4d-89.1813796!16s%2Fg%2F1yg57vgzt?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+              src="https://maps.app.goo.gl/bCXj3aE1AeXCgW8i8"
               width="100%"
               height="100%"
               style={{ border: 0 }}
