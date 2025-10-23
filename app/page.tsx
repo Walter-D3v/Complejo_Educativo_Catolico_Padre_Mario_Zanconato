@@ -102,7 +102,7 @@ export default async function HomePage() {
             <Card className="h-full hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 hover:border-institutional-mustard bg-white">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-4 w-14 h-14 md:w-16 md:h-16 bg-institutional-navy rounded-2xl flex items-center justify-center group-hover:bg-institutional-mustard transition-colors duration-300 shadow-md">
-                  <Building2 className="w-7 h-7 md:w-8 md:h-8 text-white animate-spin" />
+                  <Building2 className="w-7 h-7 md:w-8 md:h-8 text-white" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-institutional-navy group-hover:text-institutional-mustard transition-colors">
                   Nosotros
