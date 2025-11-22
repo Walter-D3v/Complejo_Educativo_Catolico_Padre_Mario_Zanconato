@@ -7,6 +7,7 @@ import { Calendar, GraduationCap, BookOpen, Users, MapPin, Building2 } from "luc
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import ContactForm from "@/components/form"
 
 export const revalidate = 60
 
@@ -237,6 +238,12 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
+      <div className="container mx-auto px-4 py-12 md:py-20 bg-gray-50">
+        <section className="mt-10">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Contactanos</h2>
+          <ContactForm/>
+      </section>
+      </div>
 
       <Footer />
     </div>
