@@ -12,11 +12,21 @@ export default function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Datos enviados:", formData);
-    // Aquí podrías integrar con Notion, EmailJS o una API propia
-    };
+    const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+    alert("Mensaje enviado con éxito 🚀");
+    setFormData({ name: "", email: "", message: "" });
+    } else {
+    alert("Error al enviar el mensaje ❌");
+    }
+};
 
     return (
     <form onSubmit={handleSubmit} className="space-y-4 p-6 bg-white shadow-md rounded-lg">
