@@ -18,6 +18,7 @@
     "next": "15.5.6",
     "notion-to-md": "^3.1.1",
     "react": "19.2.0",
+    "react-bits": "^1.0.5",
     "react-dom": "19.2.0",
     "react-markdown": "latest",
     "tailwind-merge": "^2.5.5",
