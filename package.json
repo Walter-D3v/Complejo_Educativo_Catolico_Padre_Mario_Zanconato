@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
+    "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-slot": "^1.1.0",
     "@vercel/analytics": "latest",
     "class-variance-authority": "^0.7.1",
@@ -17,6 +18,7 @@
     "lucide-react": "^0.454.0",
     "next": "15.5.6",
     "next-themes": "^0.4.6",
+    "nodemailer": "^7.0.10",
     "notion-to-md": "^3.1.1",
     "react": "19.2.0",
     "react-bits": "^1.0.5",
