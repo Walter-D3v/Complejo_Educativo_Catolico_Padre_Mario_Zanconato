@@ -29,25 +29,25 @@ export function Header() {
           <nav className="hidden md:flex gap-1 lg:gap-2">
             <Link
               href="/"
-              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200"
+              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200 hover:scale-110"
             >
               Inicio
             </Link>
             <Link
               href="/blog"
-              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200"
+              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200 hover:scale-110"
             >
               Blog
             </Link>
             <Link
               href="/academics"
-              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200"
+              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200 hover:scale-110"
             >
               Oferta Académica
             </Link>
             <Link
               href="/about"
-              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200"
+              className="px-3 lg:px-4 py-2 text-sm lg:text-base font-semibold text-institutional-navy hover:text-institutional-mustard hover:bg-white/50 rounded-lg transition-all duration-200 hover:scale-110 "
             >
               Nosotros
             </Link>
