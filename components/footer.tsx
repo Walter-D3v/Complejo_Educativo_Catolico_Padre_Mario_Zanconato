@@ -14,7 +14,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>cecezanconato@gmail.com</span>
+                <span >cecezanconato@gmail.com</span>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ export function Footer() {
           <p className="italic mb-2">
             "Instruye al niño en su camino y aun cuando fuere viejo no se apartará de él" - Prov. 22:6
           </p>
-          <p>© 2025 Complejo Educativo Católico Padre Mario Zanconato. Acuerdo de Creación No. 15-0146</p>
+          <p>© 2025 Complejo Educativo Católico Padre Mario Zanconato</p>
         </div>
       </div>
     </footer>
