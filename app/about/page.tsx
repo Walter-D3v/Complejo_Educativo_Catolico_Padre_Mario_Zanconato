@@ -15,6 +15,7 @@ import {
   MapPin,
   School,
 } from "lucide-react"
+import ContactForm from "@/components/form"
 
 export default function AboutPage() {
   return (
@@ -23,24 +24,23 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-amber-50 to-orange-50 pt-24 md:pt-32 pb-12 md:pb-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center animate-fade-in-up">
           <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-white rounded-full mb-6 shadow-lg animate-bounce-slow">
-            <School className="w-8 h-8 md:w-10 md:h-10 text-institutional-navy transition-transform duration-300 hover:scale-110" />
+            <School className="w-8 h-8 md:w-10 md:h-10 text-institutional-navy transition-transform duration-300 animate-fade-in-up" />
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 text-balance">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 text-balance animate-fade-in-up">
             Acerca de Nosotros
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty animate-fade-in-up">
             Complejo Educativo Católico Padre Mario Zanconato
           </p>
-          <p className="text-xs md:text-sm text-muted-foreground mt-2">Acuerdo de Creación No. 15-0146</p>
         </div>
       </section>
 
       {/* Mission, Vision, Values */}
       <section className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
-          <Card className="border-2">
+          <Card className="border-2 transition-all animate-fade-in-up">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-institutional-navy/10 flex items-center justify-center">
@@ -57,7 +57,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="border-2">
+          <Card className="border-2 animate-fade-in-up transition-all">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-institutional-navy/10 flex items-center justify-center">
@@ -74,7 +74,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="border-2 md:col-span-2 lg:col-span-1">
+          <Card className="border-2 md:col-span-2 lg:col-span-1 ">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-institutional-navy/10 flex items-center justify-center">
@@ -536,6 +536,14 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <div className="container mx-auto px-4 py-12 md:py-20 bg-gray-50">
+        <section className="mt-4 md:mt-12 ">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-institutional-navy text-center mb-8 md:mb-12 animate-fade-in">Contactanos</h2>
+            <div className="animate-fade-in-up flex text-center items-center justify-center " >
+              <ContactForm/>
+            </div>
+        </section>
+      </div>
 
       <Footer />
     </div>

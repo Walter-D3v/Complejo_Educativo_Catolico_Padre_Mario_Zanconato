@@ -4,9 +4,15 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import Modal from "./Modal";
+import { Fascinate } from "next/font/google";
+
+
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+    const [openModal, setOpenModal ] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,7 +27,7 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
-        alert("Mensaje enviado con éxito 🚀");
+        setOpenModal(true);
         setFormData({ name: "", email: "", message: "" });
     } else {
         alert("Error al enviar el mensaje ❌");
@@ -53,7 +59,13 @@ export default function ContactForm() {
             onChange={handleChange} 
             required 
         />
-        <Button type="submit" className="w-full">Enviar</Button>
+        <Button type="submit" className="w-full sm:w-auto bg-institutional-navy hover:bg-institutional-mustard hover:text-institutional-navy text-white font-bold px-6 md:px-8 py-5 md:py-6 text-base md:text-lg transition-all duration-300 hover:scale-105 shadow-lg">
+            Enviar
+            </Button>
+        {openModal && <Modal closeModal={setOpenModal} />}
+
         </form>
+        
     );
+    
 }
