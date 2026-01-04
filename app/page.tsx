@@ -90,6 +90,7 @@ export default async function HomePage() {
               <CardContent className="text-center">
                 <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                   Programas educativos desde Parvularia hasta Bachillerato
+                  
                 </p>
               </CardContent>
             </Card>
