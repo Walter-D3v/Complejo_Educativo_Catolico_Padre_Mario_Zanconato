@@ -240,12 +240,16 @@ export default async function HomePage() {
       </section>
       <div className="container mx-auto px-4 py-12 md:py-20 bg-gray-50">
         
-        <section className="mt-4 md:mt-12 ">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-institutional-navy text-center mb-8 md:mb-12 animate-fade-in">Contactanos</h2>
-          <div className="animate-fade-in-up flex text-center items-center justify-center " >
-          <ContactForm/>
-          </div>
+      <section className="container mx-auto px-4 py-12 md:py-20 bg-white">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-institutional-navy text-center mb-8 md:mb-12 animate-fade-in">
+          Contáctanos
+        </h2>
+
+        <div className="animate-fade-in-up flex items-center justify-center">
+          <ContactForm />
+        </div>
       </section>
+
       </div>
 
       <Footer />
